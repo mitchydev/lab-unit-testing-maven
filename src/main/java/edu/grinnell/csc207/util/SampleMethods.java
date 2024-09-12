@@ -16,7 +16,9 @@ public class SampleMethods {
    * @return The temperature in Fahrenheit.
    */
   public static int c2f(int temp) {
-    return (temp - 32) * (5 / 9);
+    int new_temp = temp*9/5;
+    new_temp += 32;
+    return new_temp;
   } // c2f(int)
 
   /**
@@ -127,7 +129,8 @@ public class SampleMethods {
     int result = 0;
 
     for (int i = 0; i < ints.length; i++) {
-      result += result + i;
+
+      result += ints[i];
     } // for
 
     return result; } // result(int[])
